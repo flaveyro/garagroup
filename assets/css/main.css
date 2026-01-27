@@ -1,0 +1,223 @@
+:root{
+    /* Brand */
+    --vvt-orange:#DF703D;
+    --vvt-text:#3F3F3F;     
+    --vvt-gray:#98989A;
+    --vvt-gray-2:#6C6C6C;
+  
+    /* Fonts */
+    --vvt-font-primary:"Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --vvt-font-secondary:"Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  
+    /* UI */
+    --vvt-radius:16px;
+  }
+  
+  body{
+    color: var(--vvt-text);
+    font-family: var(--vvt-font-primary);
+  }
+  
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  /* Buttons */
+  .btn-primary{
+    background: var(--vvt-orange);
+    border-color: var(--vvt-orange);
+  }
+  .btn-primary:hover{
+    opacity: .92;
+  }
+  
+  /* ============== TEAM SECTION============== */
+  .team-card-media{
+    height: 190px;
+    overflow: hidden;
+  }
+  .team-card-media img{
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    object-fit: cover;
+    object-position: 50% 20%;
+  }
+  
+  .team-swiper-pagination .swiper-pagination-bullet{
+    opacity: .25;
+  }
+  .team-swiper-pagination .swiper-pagination-bullet-active{
+    opacity: 1;
+  }
+  
+  /* ============== HEADER ============== */
+  .site-header{
+    background:#fff;
+  }
+  
+  .site-header .site-brand{
+    color: var(--vvt-text);
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .site-header .site-brand:hover{
+    color: var(--vvt-text);
+    text-decoration: none;
+  }
+  
+  .site-header .site-header-nav .nav-link{
+    color: var(--vvt-gray);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .site-header .site-header-nav .nav-link:hover{
+    color: var(--vvt-text);
+    text-decoration: underline;
+  }
+  
+  /* Active state */
+  .site-header .site-header-nav .current-menu-item > .nav-link,
+  .site-header .site-header-nav .current_page_item > .nav-link{
+    color: var(--vvt-text);
+    text-decoration: none;
+  }
+  
+  /* CTA (Sign in) */
+  .site-header .site-header-cta{
+    color: var(--vvt-text);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .site-header .site-header-cta:hover{
+    color: var(--vvt-text);
+    text-decoration: underline;
+  }
+  
+  /* Dropdown */
+  .site-header .dropdown-menu{
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .site-header .dropdown-item{
+    color: var(--vvt-text);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 8px 10px;
+  }
+  .site-header .dropdown-item:hover{
+    background: rgba(0,0,0,.04);
+  }
+  
+  /* Mobile menu */
+  .site-header .navbar-nav .nav-link{
+    color: var(--vvt-gray);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .site-header .navbar-nav .nav-link:hover{
+    color: var(--vvt-text);
+    text-decoration: underline;
+  }
+  .site-header .navbar-nav .current-menu-item > .nav-link,
+  .site-header .navbar-nav .current_page_item > .nav-link{
+    color: var(--vvt-text);
+  }
+  
+  /* ============== FOOTER ============== */
+  .site-footer{
+    border-top: 1px solid #eee;
+  }
+  
+  /* Footer links */
+  .site-footer a{
+    color: var(--vvt-gray);
+    text-decoration: none;
+  }
+  .site-footer a:hover{
+    color: var(--vvt-text);
+    text-decoration: underline;
+  }
+  
+  /* Footer column title */
+  .site-footer .footer-title{
+    color: var(--vvt-text);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+
+  .site-footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .site-footer ul li{
+    margin: 6px 0;
+  }
+  
+  /* BCOPYRIGHT */
+  .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+  }
+  
+  @media (max-width: 576px){
+    .footer-bottom{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+
+  /* Collage section  */
+.vvt-collage{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px; 
+  align-items: stretch;
+}
+
+.vvt-collage-tall{
+  min-height: 420px; 
+}
+
+.vvt-collage-stack{
+  display: grid;
+  gap: 16px;
+}
+
+.vvt-collage-square{
+  min-height: 200px;
+}
+
+
+.vvt-bullet{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(0,0,0,.18);
+  display: inline-block;
+  margin-top: 6px;
+  flex: 0 0 auto;
+}
+
+
+@media (max-width: 991.98px){
+  .vvt-collage{
+    grid-template-columns: 1fr;
+  }
+  .vvt-collage-tall{
+    min-height: 260px;
+  }
+  .vvt-collage-square{
+    min-height: 220px;
+  }
+}
